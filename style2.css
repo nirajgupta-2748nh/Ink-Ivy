@@ -1,18 +1,90 @@
-body{
+body {
   background-color: #fff2e0;
+  padding: 0 50px;
+  font-family: 'Timesew Roman', Times, serif;
 }
 
+
 .card {
-  margin: 20px;
-  display : inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-main{
-  padding-top: 4%;
+  border: 2px dashed #898ac4;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  /* align-items: center;
+  justify-content: space-between; */
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+.prize {
+  font-size: 1.2em;
+  /* font-weight: bold; */
+  color: #333;
+  /* margin-left: 20px; */
+  margin-top: 10px;
+}
+
+.btn {
+  /* margin-left: 40%; */
+  background-color: #898ac4;
+  color: white;
+  border-radius: 10px;
+}
+
+.material-symbols-outlined {
+  font-size: 1.2em;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.card-body-footer {
+  display: flex;
   justify-content: space-around;
+  margin-top: auto;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+main {
+  padding-top: 4%;
 }
 /* Hide all checkboxes */
 input[type="checkbox"] {
@@ -36,7 +108,7 @@ input[type="checkbox"]:checked ~ .card-text .dots {
 
 /* Button styling */
 .see-more {
-  color: #898ac4;
+  color: blue;
   cursor: pointer;
 }
 
@@ -50,17 +122,25 @@ input[type="checkbox"]:checked ~ .card-text .see-more::after {
   content: " See Less";
 } 
 
+/* .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+} */
+
 
 
 
 .navbar a {
-  font-weight: bold;
-  color: #898ac4;
+  font-weight: normal;
+  color: #5657a3;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .navbar ul {
+  font-size: 1.2em;
+  margin-top: 10px;
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -68,24 +148,24 @@ input[type="checkbox"]:checked ~ .card-text .see-more::after {
 } 
 
 #search_bar {
-  color: #898ac4;
+  color: black;
   background-color: #fff2e0;
   border: 1px solid ;
-  border-radius: 10px;
 }
 
-#search_barinput::placeholder{
-    color: #898ac4;
+#search_bar::placeholder{
+    color: rgba(11, 6, 6, 0.550);
+    margin-left: 15px;
 }
 
 .navbar {
   background-color: #fff2e0;
-  color: #898ac4;
+  color: #5657a3;
   position: sticky;
-    top: 0;
-    z-index: 1000;
-    align-items: center;
-    display: flex;
+  top: 0;
+  z-index: 1000;
+  align-items: center;
+  display: flex;
 }
 
 #home{
@@ -99,32 +179,158 @@ input[type="checkbox"]:checked ~ .card-text .see-more::after {
   display: flex ;
   align-items: center;
   color: black;
+  position: relative;
+  top: -30px;
+
 }
 #garbage{
   padding: 5%;
 }
 
-.button{
-  border-radius: 17px;
+#shop-btn{
+  border-radius: 15px;
+  background-color: #fff2e0;
+  position: relative;
+  top: -30px;
 }
 
 #about{
-  padding: 10%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
+  padding: 8%;
   background-color: #C0C9EE;
   color : black;
 }
 
+.about{
+  display: block;
+  align-content: center;
+  text-align: center  ;
+}
 #logo img {
   height: 50px;
   margin-right: 10px;
+  border-radius: 50%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search_icon {
+  font-variation-settings:  
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.navbar-btn{
+  border: none;
+  background-color: #fff2e0;
+  color: #5657a3;
+}
+
+#main_navbar .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 75%;
+  text-align: left;
+  font-weight: 100;
+  background-color: #fff2e0;
+}
+
+.navbar #books:hover .dropdown-menu {
+  display: block;
+  margin-top: 5px;
+  
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#contact h2 {
+  text-align: center;
+  margin-top: -4%;
 }
 
 #contact{
+  padding: 5%;
+}
+
+.contact{
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;   /* controls spacing properly */
+  margin: 15px 0;
+}
+
+.contact-info p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.contact-info i {
+  width: 30px;   /* same width for all icons */
+  text-align: center;
+}
+
+#contact-details{
+  margin-top: 3%;
+}
+
+#bottom_div {
+  text-align: center;
+  padding: 20px;
+  background-color: #5657a3;
+  color: black;
+}
+
+
+#contact-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 300px;
+}
+
+form{
+  border-color: #5657a3;
+  border-radius:10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+  align-content: center;
+}
+
+.form-input {
+  width: 100%;
+  padding: 7px;
+  margin: 7px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+textarea{
+  min-height: 100px;
+}
+
+#form-btn{
+  color: #5657a3;
+  border-radius: 15px;
+  background-color: #C0C9EE;
+  border-color: #898ac4;
+  width: 100%;
 }
