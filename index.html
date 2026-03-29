@@ -1,143 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">"
-    <link rel="stylesheet" href="style2.css">
-    <title>Ink & Ivy - Where stories grow.</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style2.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4037e55114.js" crossorigin="anonymous"></script>
+  <title>Ink & Ivy - Where stories grow.</title>
 </head>
+
 <body>
-  <nav class="navbar">
-    <div id="logo"> <a href="#"><img src="logo.jpeg" alt="Ink & Ivy Logo">Ink & Ivy</a></div>
 
-    <ul id="main_navbar">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Books</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div id="logo">
+    <a href="#home">
+      <img src="logo.jpeg" alt="Ink & Ivy Logo"> Ink & Ivy
+    </a>
+  </div>
 
-    <div class="search">
-      <input id="search_bar" type="text" placeholder="search for a book...">
-      <button id="search_icon" type="submit"><i class="fas fa-search"></i></button>
+  <ul id="main_navbar">
+    <li><a href="#home">Home</a></li>
+    <li id="books"><a href="#featured books">Books<span class="material-symbols-outlined">arrow_drop_down</span></a>
+      <ul class="dropdown-menu">
+        <li><a href="#featured books">Featured books</a></li>
+        <li><a href="#best sellers">Best sellers</a></li>
+        <li><a href="#coming soon">Coming soon</a></li>
+        <li><a href="#genre">Genre</a></li>
+      </ul>
+    </li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <div class="right-Navbar">
+    <!--<input type="text" placeholder="Search for a book..." id="search_bar">-->
+    <button class="navbar-btn" id="search_icon" type="button">
+      <span class="material-symbols-outlined">search</span>
+    </button>
+    <button class="navbar-btn" id="cart" type="button">
+      <span class="material-symbols-outlined">shopping_cart</span>
+    </button>
+    <button class="navbar-btn" id="menu" type="button">
+      <span class="material-symbols-outlined">menu</span>
+    </button>
+  </div>
+</nav>
+
+<header>
+  <section id="home">
+    <div class="content">
+      <h1 class="home">Discover Your Next<br>Favorite Book</h1>
+      <h3 class="home">Explore stories, knowledge, and imagination</h3>
+      <button id="shop-btn">Shop Now</button>
     </div>
-  </nav>
- 
-  <header>
-    <section >
-      <div id="home">
-        <h1 class="home">Discover Your Next Favorite Book</h1>
-        <h6 class="home">Explore stories, knowledge, and imagination</h6>
-        <button class="button" type="button">Shop Now</button>
-      </div>
-    </section>
-  </header>
-  <main>
-    <section id="books">
-
-      
-<div class="card" style="width: 18rem;">
-  <img src="it_ends_with_us.jpeg" class="card-img-top" alt="It ends with us">
-  <div class="card-body">
-    <class="card-title">It Ends With Us
-    <input type="checkbox" id="toggle">
-    <p class="card-text">
-      It Ends with Us is a romance novel by Colleen Hoover. The story follows florist Lily Bloom
-      <span class="dots">...</span>
-      <span class="more">
-        , whose abusive relationship with neurosurgeon Ryle Kincaid is compounded when her high school boyfriend Atlas Corrigan re-enters her life.
-      </span>
-      <label for="toggle" class="see-more"></label>
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-  <div class="card" style="width: 18rem;">
-  <img src="twisted_love.jpeg" class="card-img-top" alt="Twisted Novels Series">
-  <div class="card-body">
-    <class="card-title">Twisted Novels Series
-    <input type="checkbox" id="toggle">
-    <p class="card-text">
-      The Twisted series by Ana Huang is a popular four-book contemporary romance series featuring 
-      <span class="dots">...</span>
-      <span class="more">
-        interconnected stories about four best friends who find love with brooding, protective, and often dangerous men. The books mix high-stakes drama, intense emotional, and "spicy" romance with tropes like enemies-to-lovers, fake dating, and forbidden love.
-      </span>
-      <label for="toggle" class="see-more"></label>
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-  <div class="card" style="width: 18rem;">
-  <img src="the_silent_patient.jpeg" class="card-img-top" alt="The Silent Patient">
-  "
-  <div class="card-body">
-    <class="card-title">The Silent Patient
-    <input type="checkbox" id="toggle">   
-    <p class="card-text">
-      The Silent Patient by Alex Michaelides is a psychological thriller about Alicia Berenson
-      <span class="dots">...</span>
-      <span class="more">
-        , a famous painter who shoots her husband five times in the face and never speaks another word. A forensic psychotherapist, Theo Faber, becomes obsessed with her case, aiming to uncover her motive by breaking her silence while confronting his own troubled past  
-      </span>
-      <label for="toggle" class="see-more"></label>
-    </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+  </section>
+</header>
 
 
-<div id="garbage">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia delectus eos aut sapiente sed tempore, nihil neque dolor reiciendis ipsam iste assumenda alias, vitae minus voluptates incidunt suscipit, aliquam aspernatur!
-  Iste, non? Accusamus mollitia eligendi delectus fugiat consequatur natus soluta porro voluptatem tempore cum perspiciatis culpa quidem, reiciendis cupiditate repellat facilis quod odio voluptatum temporibus dolor corrupti aut tenetur eveniet.
-  Aperiam accusamus temporibus doloremque, alias ea quam laudantium deserunt quo est dolore possimus magnam iure soluta cupiditate non odio modi perspiciatis vero natus similique quasi, veritatis consequatur delectus tenetur! Autem.
-  Tempora, aliquid! Quae praesentium at vel quas! Facere quia sit harum sed delectus ipsam quasi rerum esse tenetur veniam laboriosam nemo hic commodi quae alias soluta magni ex, aliquid nulla?
-  Ipsa in expedita eveniet voluptate dicta quidem voluptas veritatis. Provident et voluptates explicabo ratione eum, tempora nobis laborum reiciendis libero ad quae corrupti voluptatibus cumque aliquid officia, eius fugit. Harum.
-  Eum corrupti, et officiis distinctio cumque amet ullam praesentium numquam ipsa non necessitatibus sed nemo eveniet, facere pariatur quos quam autem soluta! Dolore sint recusandae iste quam voluptatem voluptates excepturi!
-  Nemo neque hic sed fugit culpa iusto, sunt non quidem cupiditate alias atque magni eius soluta consectetur laudantium labore officiis ad obcaecati natus ducimus nesciunt dolore ipsam quae quibusdam? Necessitatibus?
-  Dignissimos, eius dicta recusandae laudantium officiis ex, deleniti esse excepturi sunt itaque reiciendis nam rerum. Illum, quos, explicabo eum pariatur nesciunt modi itaque veniam labore dolore eligendi vero officia iste.
-  Sunt praesentium alias, accusamus reiciendis eaque doloremque at quibusdam totam nobis facere necessitatibus omnis aperiam facilis. Doloribus quasi maxime a iure dolor! Velit quod eveniet qui explicabo, modi dolore laudantium.
-  Eveniet, placeat. Dignissimos eligendi laboriosam veniam accusantium reiciendis. Ratione explicabo iste recusandae veritatis architecto cum suscipit, aliquid blanditiis nam quia ipsam repellat ipsum nulla dolorum velit deserunt inventore eius rem!</p>
-  </div>
+<main >
+  <section id="featured books">
 
-    </section>
-  </main>
-  <hr>
-  <footer>
-    <section id="about">
-      <h2>About Us</h2>
-      <div>
-        <p>At Ink & Ivy, we believe that books are more than just pages—they are gateways to new worlds, ideas, and perspectives. Our mission is to create a space where readers of all kinds can discover stories that inspire, educate, and entertain. From timeless classics to modern bestsellers, we carefully curate our collection to suit every reader’s taste.</p>
-        <p>We are passionate about fostering a love for reading and building a community where knowledge and imagination thrive. Whether you are searching for your next favorite novel or exploring new genres, Ink & Ivy is here to make your reading journey meaningful and enjoyable.</p>
+    <div class="heading">
+      <h2>Featured Books</h2>
+      <h5>The books everyone's been reading right now.</h5>
+    </div>
+
+    <div class="card-container">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img src="the_hunger_games.jpg" class="card-img-top" alt="The Hunger Games">
+        <div class="card-body">
+          <h3 class="card-title">The Hunger Games</h3>
+          <h5 class="author">by Suzanne Collins</h5>
+          <div class="card-body-footer">
+            <h4 class="prize">300₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span> Add to Cart</a>
+          </div>
+        </div>
       </div>
-    </section><hr>
-    <section id="contact">
-      <div class="contact">
-        <h2>Get In Touch</h2>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="it_ends_with_us.jpeg" class="card-img-top" alt="It Ends With Us">
+        <div class="card-body">
+          <h3 class="card-title">It Ends With Us</h3>
+          <h5 class="author">by Colleen Hoover</h5>
+          <div class="card-body-footer">
+            <h4 class="prize">400₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span> Add to Cart</a>
+          </div>
+        </div>
       </div>
-      <div class="contact">
-        <p>Have a question, suggestion, or just want to say hello? We'd love to hear from you.  </p>
-        <pre>
-          Email
-          hello@Ink&Ivy.com
-        </pre>
-        <pre>
-          Phone
-          +91 7420914354
-        </pre>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="twisted_love.jpeg" class="card-img-top" alt="Twisted Novels Series">
+        <div class="card-body">
+          <h3 class="card-title">Twisted Novels Series</h3>
+          <h5 class="author">by Ana Huang</h5>
+          <div class="card-body-footer">
+            <h4 class="prize">800₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span>Add to Cart</a>
+          </div>
+        </div>
       </div>
-      <div class="contact">
-        <form action="">
-          <input type="text" placeholder="Your Name">
-          <input type="email" placeholder="Your Email">
-          <textarea placeholder="Your Message"></textarea>
-          <button type="submit">Send Message</button>
-        </form>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <img src="the_silent_patient.jpeg" class="card-img-top" alt="The Silent Patient">
+        <div class="card-body">
+          <h3 class="card-title">The Silent Patient</h3>
+          <h5 class="author">by Alex Michaelides</h5>
+          <p class="card-text"></p>
+          <div class="card-body-footer">
+            <h4 class="prize">200₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span>Add to Cart</a>
+          </div>
+        </div>
       </div>
-    </section>
-  </footer>
+    </div>
+  </section>
+
+  <br>
   
+<section id="best sellers">
+
+    <div class="heading">
+      <h2>Best Sellers</h2>
+      <h5>Read What Millions Have Loved!</h5>
+    </div>
+
+    <div class="card-container">
+
+      <!-- CARD 1 -->
+      <div class="card">
+        <img src="AtomicHabits.jpg" class="card-img-top" alt="Atomic Habits">
+        <div class="card-body">
+          <h3 class="card-title">Atomic Habits</h3>
+          <h5 class="author">by James Clear</h5>
+          <div class="card-body-footer">
+            <h4 class="prize">300₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span> Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="a good girl's guide to murder.jpg" class="card-img-top" alt="A Good Girl's Guide to Murder">
+        <div class="card-body">
+          <h3 class="card-title">A Good Girl's Guide to Murder</h3>
+          <h5 class="author">by Holly jackson</h5>
+          <div class="card-body-footer">
+            <h4 class="prize">400₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span> Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="the psychology of money.jpg" class="card-img-top" alt="The Psychology of Money">
+        <div class="card-body">
+          <h3 class="card-title">The Psychology of Money</h3>
+          <h5 class="author">by Morgan Housel</h5>
+          <div class="card-body-footer">
+            <h4 class="prize">800₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+        <img src="the housemaid.jpg" class="card-img-top" alt="The Housemaid">
+        <div class="card-body">
+          <h3 class="card-title">The Housemaid</h3>
+          <h5 class="author">by freida McFadden</h5>
+          <p class="card-text"></p>
+          <div class="card-body-footer">
+            <h4 class="prize">200₹</h4>
+            <a href="#" class="btn"><span class="material-symbols-outlined">shopping_cart</span>Add to Cart</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- EXTRA CONTENT -->
+    <div id="garbage">
+      <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem.
+      </p>
+    </div>
+
+  </section>
+</main>
+
+<hr>
+
+<!-- FOOTER -->
+<footer>
+  <section id="about">
+    <div class="about"><h2>About Us</h2></div>
+    <div class="about">
+      <p>
+        At Ink & Ivy, we believe that books are more than just pages—they are gateways to new worlds, ideas, and perspectives.
+      </p>
+      <p>
+        We are passionate about fostering a love for reading and building a community where knowledge and imagination thrive.
+      </p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <div class="contact">
+      <div id="contact-details">
+        <p>Have a question, suggestion, or just want to<br> say hello? We'd love to hear from you.</p>
+        <div class="contact-info" id="mail">
+          <i class="fa-regular fa-envelope fa-2xl" style="color: #5657a3;"></i>
+          <p>Email:<br>info@inkandivy.com</p>
+        </div>
+        <div class="contact-info" id="phone">
+          <i class="fa-solid fa-phone fa-2xl" style="color: #5657a3;"></i>
+          <p>Phone:<br>(123) 456-7890</p>
+        </div>
+        <div class="contact-info" id="instagram">
+          <i class="fa-brands fa-instagram fa-2xl" style="color: #5657a3;"></i>
+          <p>Instagram:<br>@inkandivybooks</p>
+        </div>
+      </div>
+      <div id="contact-form">
+         <form action="#" method="post">
+          <input class="form-input" type="text" placeholder="Your Name" required>
+          <input class="form-input" type="email" placeholder="Your Email" required>
+          <textarea class="form-input" placeholder="Your Message" required></textarea><br>
+          <button id="form-btn" type="submit">Send Message</button>
+         </form>
+      </div>
+    </div>
+  </section>
+</footer>
+<div id="bottom_div">
+  <p>&copy; 2026 Ink & Ivy. All rights reserved.</p>
+</div>
+
 </body>
 </html>
